@@ -1,0 +1,78 @@
+/*
+h1 {
+    color: blue;
+    margin: 20px;
+}
+
+img{
+    width: 250px;
+    margin: 5px;
+}
+
+#message{ /*para pegar elemento (id)
+    text-align: center;
+}
+
+footer{
+    text-align: left;
+    height: 50px;
+    margin-top: 100px;
+    background-color: aqua;
+}
+*/
+
+body{
+    color: rgba(100,150,200, 0.7);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    /*background-color: aquamarine;
+    margin-top: 300px;*/
+    padding:10px;
+    border-top: 1px solid black;
+    
+}
+
+header{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 64px;
+}
+
+header a {
+    color: green;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.portrait{
+    width: 500px;
+    
+}
+
+.mainContent{
+    flex-grow: 1;
+}
+
+input{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+    background-color: gray;
+}
