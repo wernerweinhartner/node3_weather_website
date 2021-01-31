@@ -15,7 +15,8 @@ function forecast(latitude, longitude, callback){
                 feelslike: response.body.current.feelslike,
                 name: response.body.location.name,
                 //location: response.body.location.location,
-                country: response.body.location.country
+                country: response.body.location.country,
+                description: response.body.current.weather_descriptions
 
             })
         }
