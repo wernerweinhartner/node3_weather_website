@@ -16,7 +16,8 @@ function forecast(latitude, longitude, callback){
                 name: response.body.location.name,
                 //location: response.body.location.location,
                 country: response.body.location.country,
-                description: response.body.current.weather_descriptions
+                description: response.body.current.weather_descriptions[0],
+                humidity: response.body.current.humidity
 
             })
         }

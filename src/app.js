@@ -67,7 +67,8 @@ app.get('/weather', (req, res)=>{
                 Location: data.location,
                 Temperature: Data.temperature,
                 Feelslike: Data.feelslike,
-                description: Data.description
+                description: Data.description,
+                humidity: Data.humidity
             })
             /*
             console.log("Location: " + data.location)

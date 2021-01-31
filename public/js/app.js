@@ -23,6 +23,7 @@ const search = document.querySelector('input')
 const p1 = document.querySelector('#p1') // # para pegar por id
 const p2 = document.querySelector('#p2')
 const p3 = document.querySelector('#p3')
+const p4 = document.querySelector('#p4')
 
 
 
@@ -32,6 +33,7 @@ weatherForm.addEventListener('submit', (e)=>{ //e = event
     p1.textContent = 'Loading...'
     p2.textContent = ''
     p3.textContent = ''
+    p4.textContent = ''
 
     const location = search.value //para pegar o valor que foi digitado (input)
 
@@ -43,10 +45,11 @@ weatherForm.addEventListener('submit', (e)=>{ //e = event
             return console.log(data.error)
         }
         console.log(data.Location)
-        p1.textContent = data.Location //para modificar o texto do paragrafo p
+        p1.textContent = "Location: " + data.Location //para modificar o texto do paragrafo p
         console.log(data.Temperature)
-        p2.textContent = data.Temperature
-        p3.textContent = data.description
+        p2.textContent = "Temperature: " + data.Temperature + "°C"
+        p3.textContent = "It is " + data.description
+        p4.textContent = "Humidity: " + data.humidity + "%"
         
     })
 })
